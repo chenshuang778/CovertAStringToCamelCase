@@ -10,7 +10,8 @@
           });
         }
 
-        console.log(convertToCamelCase('-hello-jack-'));
+        // Example: process string '-convert-to-camel-case-'
+        console.log(convertToCamelCase('-hello-jack-')); // convertToCamelCase
     </script>
 </head>
 <body>
