@@ -6,7 +6,7 @@
 
 
 ### 1. 使用常规的String字符串处理
-```
+``` 
 function convertToCamelCase(str) {
     var camlCaseStr='';
     var arry = str.split('-');
@@ -22,14 +22,15 @@ function convertToCamelCase(str) {
     camlCaseStr = camlCaseStr.length > 0 ? camlCaseStr.substring(0, 1).toLowerCase() + camlCaseStr.substring(1) : camlCaseStr;
 
     return camlCaseStr;
-}```
+} 
+ ``` 
 
 ### 2. 使用正则表达式处理 
 
-'''
+``` 
 function convertToCamelCase(str) {
   return str.replace(/\-[a-z]/g , function(a, b){
       return b == 0 ? a.replace('-','') : a.replace('-','').toUpperCase();
   });
-}
-'''
+} 
+```
