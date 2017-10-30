@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function convertToCamelCase(str) {
+          return str.replace(/\-[a-z]/g , function(a, b){
+            return b == 0 ? a.replace('-','') : a.replace('-','').toUpperCase();
+          });
+        }
+
+        console.log(convertToCamelCase('-hello-jack-'));
+    </script>
+</head>
+<body>
+     
+</body>
+</html>
