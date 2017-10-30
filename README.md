@@ -5,7 +5,7 @@
 将型如：“convert-to-camel-case”的字符串转换为“covertToCamelCase”, 类似的也可以稍改代码处理“convert_to_camel_case”的字符串。下面给出两种处理方式：使用常规字符串处理方式和正则表达式处理方式
 
 
-### 1. 使用常规的String字符串处理
+### 1. 使用常规的String字符串处理函数实现
 ``` 
 function convertToCamelCase(str) {
     var camlCaseStr='';
@@ -26,7 +26,7 @@ function convertToCamelCase(str) {
  ``` 
 
 
-### 2. 使用正则表达式处理 
+### 2. 使用正则表达式实现
 
 ``` 
 function convertToCamelCase(str) {
