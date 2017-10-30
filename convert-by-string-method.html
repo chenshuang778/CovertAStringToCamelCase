@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function convertToCamelCase(str) {
+            var camlCaseStr='';
+            var arry = str.split('-');
+            
+            for (var i=0; i< arry.length; i++) {
+                if(arry[i].length >0) {
+                    // If item not empty, then convert the first character to upper case
+                    camlCaseStr += arry[i].substring(0, 1).toUpperCase() + arry[i].substring(1);
+                }
+            } 
+
+            // Convert the fist character to lower case
+            camlCaseStr = camlCaseStr.length > 0 ? camlCaseStr.substring(0, 1).toLowerCase() + camlCaseStr.substring(1) : camlCaseStr;
+            
+            return camlCaseStr;
+        }
+
+        console.log(convertToCamelCase('-hello-jack-'));
+    </script>
+</head>
+<body>
+     
+</body>
+</html>
